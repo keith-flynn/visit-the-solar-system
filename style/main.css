@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+header,
+footer {
+  
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  /* https://www.publicdomainpictures.net/pictures/10000/velka/starry-night-871287410454UmtH.jpg */
+  background-image: url("../images/starry-night.jpg");
+  display: flex;
+  flex: 1;
+}
+
+article {
+  flex: 2 2 12em;
+}
+
+.content-article h1 {
+  color: white;
+}
+
+nav,
+aside {
+  flex: 1;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    flex-direction: column;;
+  }
+}

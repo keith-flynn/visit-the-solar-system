@@ -5,15 +5,33 @@
 html,
 body {
   height: 100%;
+  font-family: Helvetica, Arial, sans-serif
 }
 
 header,
 footer {
-  
+  background-color: rgb(21, 119, 204);
+}
+
+.header-list,
+.footer-list {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  gap: 15px;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color:darkgray
 }
 
 body {
@@ -41,8 +59,17 @@ aside {
   flex: 1;
 }
 
+.planet-nav {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
 @media screen and (max-width: 500px) {
   main {
-    flex-direction: column;;
+    flex-direction: column;
   }
 }
